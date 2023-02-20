@@ -60,7 +60,8 @@
     "dev:child-nuxtjs-vite": "cd child_apps/nuxtjs2 && yarn dev:main-vite",
     "dev:child-nuxtjs-vue2": "cd child_apps/nuxtjs2 && yarn dev:main-vue2",
     "dev:child-nuxtjs-vue3": "cd child_apps/nuxtjs2 && yarn dev:main-vue3",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"cd child_apps/vue3 && npm run dev\" \"cd child_apps/vue2 && npm run dev\" "
   },
   "repository": {
     "type": "git",
