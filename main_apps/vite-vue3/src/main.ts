@@ -43,5 +43,6 @@ microApp.start({
 })
 
 const app = createApp(App)
+localStorage.setItem('test_local', 'test')
 
 app.use(router).mount('#app')

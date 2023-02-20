@@ -61,7 +61,7 @@
     "dev:child-nuxtjs-vue2": "cd child_apps/nuxtjs2 && yarn dev:main-vue2",
     "dev:child-nuxtjs-vue3": "cd child_apps/nuxtjs2 && yarn dev:main-vue3",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "concurrently \"cd child_apps/vue3 && npm run dev\" \"cd child_apps/vue2 && npm run dev\" "
+    "start": "concurrently \"cd main_apps/vite-vue3 && npm run dev\" \"cd child_apps/sidebar && npm run dev\" \"cd child_apps/vue2 && npm run dev\" \"cd child_apps/vue3 && npm run dev\" "
   },
   "repository": {
     "type": "git",
@@ -78,7 +78,8 @@
   },
   "homepage": "https://github.com/micro-zoe/micro-app-demo#readme",
   "dependencies": {
-    "@micro-zoe/micro-app": "latest"
+    "@micro-zoe/micro-app": "latest",
+    "concurrently": "^7.6.0"
   },
   "devDependencies": {
     "cross-env": "~7.0.3",
